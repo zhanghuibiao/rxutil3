@@ -7,7 +7,7 @@
 
 一个实用的RxJava3工具类库。从原作者xuexiangjys的开源库
 
->[RxUtil](https://github.com/xuexiangjys/RxUtil)，
+>[RxUtil2](https://github.com/xuexiangjys/RxUtil2)，
 
 升级过来
 
