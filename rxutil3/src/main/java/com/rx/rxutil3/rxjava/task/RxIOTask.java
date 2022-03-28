@@ -14,26 +14,33 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
+package com.rx.rxutil3.rxjava.task;
 
-import android.app.Application;
-
-import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
+import com.rx.rxutil3.rxjava.impl.IRxIOTask;
 
 /**
+ * IO线程中操作的任务
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:29
  */
-public class App extends Application {
+public abstract class RxIOTask<T> implements IRxIOTask<T, Void> {
+    /**
+     * IO执行任务的入参
+     */
+    private T InData;
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+    public RxIOTask(T inData) {
+        InData = inData;
+    }
 
-        XUtil.init(this);
+    public T getInData() {
+        return InData;
+    }
 
-        RxLog.debug(true);
+    public RxIOTask setInData(T inData) {
+        InData = inData;
+        return this;
     }
 
 }

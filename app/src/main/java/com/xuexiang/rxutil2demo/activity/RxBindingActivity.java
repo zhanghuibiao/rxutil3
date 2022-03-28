@@ -20,9 +20,9 @@ import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.xuexiang.rxutil2.RxBindingUtils;
-import com.xuexiang.rxutil2.rxjava.DisposablePool;
-import com.xuexiang.rxutil2.subsciber.SimpleThrowableAction;
+import com.rx.rxutil3.RxBindingUtils;
+import com.rx.rxutil3.rxjava.DisposablePool;
+import com.rx.rxutil3.subsciber.SimpleThrowableAction;
 import com.xuexiang.rxutil2demo.R;
 import com.xuexiang.rxutil2demo.base.BaseActivity;
 
@@ -30,9 +30,9 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import io.reactivex.Observable;
-import io.reactivex.functions.BiFunction;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.functions.BiFunction;
+import io.reactivex.rxjava3.functions.Consumer;
 
 /**
  * @author xuexiang

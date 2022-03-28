@@ -14,26 +14,34 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
+package com.rx.rxutil3.rxjava;
 
-import android.app.Application;
 
-import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
+import io.reactivex.rxjava3.core.FlowableOnSubscribe;
 
 /**
+ * 在订阅时执行的回调
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:28
  */
-public class App extends Application {
+public abstract class RxTaskOnSubscribe<T> implements FlowableOnSubscribe<T> {
+    /**
+     * 在订阅时执行的任务
+     */
+    private T mTask;
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+    public RxTaskOnSubscribe(T task) {
+        mTask = task;
+    }
 
-        XUtil.init(this);
+    public T getTask() {
+        return mTask;
+    }
 
-        RxLog.debug(true);
+    public RxTaskOnSubscribe setTask(T task) {
+        mTask = task;
+        return this;
     }
 
 }

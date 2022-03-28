@@ -14,26 +14,25 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
+package com.rx.rxutil3.subsciber;
 
-import android.app.Application;
-
+import com.rx.rxutil3.exception.RxException;
 import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
 
 /**
+ * 简单的订阅者
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:27
  */
-public class App extends Application {
-
+public abstract class SimpleSubscriber<T> extends BaseSubscriber<T> {
+    /**
+     * 出错
+     *
+     * @param e
+     */
     @Override
-    public void onCreate() {
-        super.onCreate();
-
-        XUtil.init(this);
-
-        RxLog.debug(true);
+    public void onError(RxException e) {
+        RxLog.e(e);
     }
-
 }

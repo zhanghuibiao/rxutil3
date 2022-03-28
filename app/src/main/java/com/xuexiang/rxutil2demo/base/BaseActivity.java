@@ -19,14 +19,13 @@ package com.xuexiang.rxutil2demo.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.xuexiang.rxutil2.lifecycle.RxLifecycle;
+import com.rx.rxutil3.lifecycle.RxLifecycle;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

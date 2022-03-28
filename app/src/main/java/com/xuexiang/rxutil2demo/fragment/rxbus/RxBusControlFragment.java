@@ -18,7 +18,7 @@ package com.xuexiang.rxutil2demo.fragment.rxbus;
 
 import android.view.View;
 
-import com.xuexiang.rxutil2.rxbus.RxBusUtils;
+import com.rx.rxutil3.rxbus.RxBusUtils;
 import com.xuexiang.rxutil2demo.R;
 import com.xuexiang.rxutil2demo.entity.Event;
 import com.xuexiang.rxutil2demo.entity.EventKey;

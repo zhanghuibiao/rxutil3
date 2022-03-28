@@ -23,20 +23,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.xuexiang.rxutil2.lifecycle.RxLifecycle;
-import com.xuexiang.rxutil2.logs.RxLog;
-import com.xuexiang.rxutil2.rxjava.DisposablePool;
-import com.xuexiang.rxutil2.rxjava.RxJavaUtils;
-import com.xuexiang.rxutil2.rxjava.RxSchedulerUtils;
-import com.xuexiang.rxutil2.rxjava.SchedulerTransformer;
-import com.xuexiang.rxutil2.rxjava.task.RxAsyncTask;
-import com.xuexiang.rxutil2.rxjava.task.RxIOTask;
-import com.xuexiang.rxutil2.rxjava.task.RxIteratorTask;
-import com.xuexiang.rxutil2.rxjava.task.RxUITask;
-import com.xuexiang.rxutil2.subsciber.ProgressDialogLoader;
-import com.xuexiang.rxutil2.subsciber.ProgressLoadingSubscriber;
-import com.xuexiang.rxutil2.subsciber.SimpleSubscriber;
-import com.xuexiang.rxutil2.subsciber.impl.IProgressLoader;
+import com.rx.rxutil3.lifecycle.RxLifecycle;
+import com.rx.rxutil3.logs.RxLog;
+import com.rx.rxutil3.rxjava.DisposablePool;
+import com.rx.rxutil3.rxjava.RxJavaUtils;
+import com.rx.rxutil3.rxjava.RxSchedulerUtils;
+import com.rx.rxutil3.rxjava.SchedulerTransformer;
+import com.rx.rxutil3.rxjava.task.RxAsyncTask;
+import com.rx.rxutil3.rxjava.task.RxIOTask;
+import com.rx.rxutil3.rxjava.task.RxIteratorTask;
+import com.rx.rxutil3.rxjava.task.RxUITask;
+import com.rx.rxutil3.subsciber.ProgressDialogLoader;
+import com.rx.rxutil3.subsciber.ProgressLoadingSubscriber;
+import com.rx.rxutil3.subsciber.SimpleSubscriber;
+import com.rx.rxutil3.subsciber.impl.IProgressLoader;
 import com.xuexiang.rxutil2demo.R;
 import com.xuexiang.rxutil2demo.base.BaseActivity;
 import com.xuexiang.xutil.system.AppExecutors;
@@ -46,10 +46,10 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableEmitter;
+import io.reactivex.rxjava3.core.ObservableOnSubscribe;
+import io.reactivex.rxjava3.functions.Consumer;
 
 /**
  * RxJavaUtils演示示例

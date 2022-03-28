@@ -14,26 +14,29 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
-
-import android.app.Application;
+package com.rx.rxutil3.subsciber;
 
 import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
+
+import io.reactivex.rxjava3.functions.Consumer;
+
 
 /**
+ * 简单的出错处理（把错误打印出来）
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:26
  */
-public class App extends Application {
+public final class SimpleThrowableAction implements Consumer<Throwable> {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+    private String mTag;
 
-        XUtil.init(this);
-
-        RxLog.debug(true);
+    public SimpleThrowableAction(String tag) {
+        mTag = tag;
     }
 
+    @Override
+    public void accept(Throwable throwable) throws Exception {
+        RxLog.eTag(mTag, "订阅发生错误！", throwable);
+    }
 }

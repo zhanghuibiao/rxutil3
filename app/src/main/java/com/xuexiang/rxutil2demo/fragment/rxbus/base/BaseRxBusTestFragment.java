@@ -20,15 +20,15 @@ import android.os.Looper;
 import android.view.View;
 import android.widget.TextView;
 
-import com.xuexiang.rxutil2.rxbus.RxBusUtils;
-import com.xuexiang.rxutil2.rxbus.SubscribeInfo;
+import com.rx.rxutil3.rxbus.RxBusUtils;
+import com.rx.rxutil3.rxbus.SubscribeInfo;
 import com.xuexiang.rxutil2demo.R;
 import com.xuexiang.rxutil2demo.base.BaseFragment;
 import com.xuexiang.rxutil2demo.entity.EventKey;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.functions.Consumer;
 
 /**
  * @author xuexiang

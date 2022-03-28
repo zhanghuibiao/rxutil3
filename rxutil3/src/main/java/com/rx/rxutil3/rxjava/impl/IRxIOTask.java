@@ -14,26 +14,20 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
-
-import android.app.Application;
-
-import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
+package com.rx.rxutil3.rxjava.impl;
 
 /**
+ * 在IO线程中执行的任务
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:29
  */
-public class App extends Application {
+public interface IRxIOTask<T, R> {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        XUtil.init(this);
-
-        RxLog.debug(true);
-    }
-
+    /**
+     * 在IO线程中执行
+     * @param t 任务执行的入参
+     * @return  R 任务执行的出参
+     */
+    R doInIOThread(T t);
 }

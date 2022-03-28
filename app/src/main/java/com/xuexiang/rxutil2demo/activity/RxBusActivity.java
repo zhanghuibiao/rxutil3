@@ -20,7 +20,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.xuexiang.rxutil2.logs.RxLog;
+import com.rx.rxutil3.logs.RxLog;
 import com.xuexiang.rxutil2demo.R;
 
 public class RxBusActivity extends AppCompatActivity {

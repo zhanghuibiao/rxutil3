@@ -14,26 +14,24 @@
  * limitations under the License.
  */
 
-package com.xuexiang.rxutil2demo;
-
-import android.app.Application;
-
-import com.rx.rxutil3.logs.RxLog;
-import com.xuexiang.xutil.XUtil;
+package com.rx.rxutil3.logs;
 
 /**
+ * 简易的日志记录接口
+ *
  * @author xuexiang
- * @date 2018/3/11 下午11:11
+ * @since 2018/6/10 下午9:30
  */
-public class App extends Application {
+public interface ILogger {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        XUtil.init(this);
-
-        RxLog.debug(true);
-    }
+    /**
+     * 打印信息
+     *
+     * @param priority 优先级
+     * @param tag      标签
+     * @param message  信息
+     * @param t        出错信息
+     */
+    void log(int priority, String tag, String message, Throwable t);
 
 }

@@ -16,13 +16,14 @@
 
 package com.xuexiang.rxutil2demo.fragment.rxbus;
 
-import com.xuexiang.rxutil2.rxbus.RxBusUtils;
-import com.xuexiang.rxutil2.rxbus.SubscribeInfo;
+import com.rx.rxutil3.rxbus.RxBusUtils;
+import com.rx.rxutil3.rxbus.SubscribeInfo;
 import com.xuexiang.rxutil2demo.entity.Event;
 import com.xuexiang.rxutil2demo.entity.EventKey;
 import com.xuexiang.rxutil2demo.fragment.rxbus.base.BaseRxBusTestFragment;
 
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.functions.Consumer;
+
 
 /**
  * @author xuexiang
