@@ -11,6 +11,8 @@
 
 升级过来
 
+> 如果你习惯RxJava2，请移步[RxUtil2](https://github.com/xuexiangjys/RxUtil2)
+
 > 如果你习惯RxJava1，请移步[RxUtil](https://github.com/xuexiangjys/RxUtil)
 
 ## 特征
