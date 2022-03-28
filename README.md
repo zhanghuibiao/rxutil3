@@ -5,7 +5,7 @@
 [![I](https://img.shields.io/github/issues/xuexiangjys/RxUtil2.svg)](https://github.com/xuexiangjys/RxUtil2/issues)
 [![Star](https://img.shields.io/github/stars/xuexiangjys/RxUtil2.svg)](https://github.com/xuexiangjys/RxUtil2)
 
-一个实用的RxJava3工具类库。从原作者
+一个实用的RxJava3工具类库。从原作者xuexiangjys的开源库
 
 >[RxUtil](https://github.com/xuexiangjys/RxUtil)，
 
