@@ -1,19 +1,15 @@
-# RxUtil2
+# RxUtil3
 
 [![](https://jitpack.io/v/xuexiangjys/RxUtil2.svg)](https://jitpack.io/#xuexiangjys/RxUtil2)
 [![api](https://img.shields.io/badge/API-14+-brightgreen.svg)](https://android-arsenal.com/api?level=14)
 [![I](https://img.shields.io/github/issues/xuexiangjys/RxUtil2.svg)](https://github.com/xuexiangjys/RxUtil2/issues)
 [![Star](https://img.shields.io/github/stars/xuexiangjys/RxUtil2.svg)](https://github.com/xuexiangjys/RxUtil2)
 
-一个实用的RxJava2工具类库。
+一个实用的RxJava3工具类库。
 
 > 如果你习惯RxJava1，请移步[RxUtil](https://github.com/xuexiangjys/RxUtil)
 
 ## 关于我
-
-| 公众号   | 掘金     |  知乎    |  CSDN   |   简书   |   思否  |   哔哩哔哩  |   今日头条
-|---------|---------|--------- |---------|---------|---------|---------|---------|
-| [我的Android开源之旅](https://ss.im5i.com/2021/06/14/6tqAU.png)  |  [点我](https://juejin.im/user/598feef55188257d592e56ed/posts)    |   [点我](https://www.zhihu.com/people/xuexiangjys/posts)       |   [点我](https://xuexiangjys.blog.csdn.net/)  |   [点我](https://www.jianshu.com/u/6bf605575337)  |   [点我](https://segmentfault.com/u/xuexiangjys)  |   [点我](https://space.bilibili.com/483850585)  |   [点我](https://img.rruu.net/image/5ff34ff7b02dd)
 
 ## 特征
 
@@ -52,12 +48,12 @@ allprojects {
 ```
 dependencies {
    ...
-   implementation 'io.reactivex.rxjava2:rxjava:2.2.20'
-   implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+   implementation 'io.reactivex.rxjava3:rxjava:3.1.4'
+   implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
    //rxbinding的sdk
-   implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+   implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
 
-   implementation 'com.github.xuexiangjys:RxUtil2:1.2.0'
+   implementation 'com.github.zhanghuibiao:RxUtil3:1.2.0'
 }
 ```
 
@@ -324,10 +320,3 @@ RxJavaUtils.polling(5)
             }
         });
 ```
-
-## 公众号
-
-> 更多资讯内容，欢迎扫描关注我的个人微信公众号:【我的Android开源之旅】
-
-![gzh_weixin.jpg](https://ss.im5i.com/2021/06/14/65yoL.jpg)
-
